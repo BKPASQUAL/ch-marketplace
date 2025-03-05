@@ -1,10 +1,10 @@
 import React from "react";
-import Image from "next/image";  // ✅ Import Next.js Image
+import Image from "next/image"; 
 
 export default function ItemCard() {
   return (
-    <div className="h-96 w-1/5  bg-amber-200 p-4">
-      <div className="w-full h-48 relative">
+    <div className="h-96 w-1/5 border p-2 rounded-2xl">
+      <div className="w-full h-72 relative">
         <Image 
           src="/images/3_gan.jpg" 
           alt="Item"
@@ -13,7 +13,7 @@ export default function ItemCard() {
           className="rounded-md"
         />
       </div>
-      <p className="mt-2 text-center">Item Name</p>
+      <p className="mt-2 ">Item Name</p>
     </div>
   );
 }
